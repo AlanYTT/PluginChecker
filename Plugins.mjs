@@ -1,9 +1,7 @@
-
 import inquirer from 'inquirer';
 import fetch from 'node-fetch';
 import chalk from 'chalk';
 import { clear } from 'console';
-
 
 const getServerStatus = async (serverIP, serverPort) => {
     try {
@@ -53,7 +51,7 @@ const showPluginsAndPlayers = async () => {
 
         if (serverData.plugins && serverData.plugins.names) {
             console.log('Lista de plugins:', chalk.yellow(serverData.plugins.names.join(', ')));
-            console.log('Script by alanYTT)';
+            console.log('Script by alanYTT');
         } else {
             console.log('No se encontraron plugins.');
             console.log('Puede ser un error de api multi version.');
