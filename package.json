@@ -1,0 +1,13 @@
+
+{
+  "name": "plugins-checker",
+  "version": "1.0.0",
+  "description": "Script para verificar el estado del servidor y listar plugins y jugadores",
+  "main": "Plugins.mjs",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.23",
+    "node-fetch": "^3.3.2"
+  }
+}
