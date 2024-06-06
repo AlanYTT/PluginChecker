@@ -26,7 +26,6 @@ const showPluginsAndPlayers = async () => {
         {
             type: 'input',
             name: 'serverIP',
-            message: 'Script by alanYTT',
             message: 'Ingresa la dirección IP o el nombre de dominio del servidor:',
             validate: function (value) {
                 if (value.length) {
@@ -54,8 +53,10 @@ const showPluginsAndPlayers = async () => {
 
         if (serverData.plugins && serverData.plugins.names) {
             console.log('Lista de plugins:', chalk.yellow(serverData.plugins.names.join(', ')));
+            console.log('Script by alanYTT)';
         } else {
             console.log('No se encontraron plugins.');
+            console.log('Puede ser un error de api multi version.');
         }
 
         if (serverData.players && serverData.players.online > 0) {
