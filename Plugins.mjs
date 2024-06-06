@@ -26,6 +26,7 @@ const showPluginsAndPlayers = async () => {
         {
             type: 'input',
             name: 'serverIP',
+            message: 'Script by alanYTT',
             message: 'Ingresa la dirección IP o el nombre de dominio del servidor:',
             validate: function (value) {
                 if (value.length) {
