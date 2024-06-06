@@ -7,7 +7,7 @@ import { clear } from 'console';
 
 const getServerStatus = async (serverIP, serverPort) => {
     try {
-        const response = await fetch(atob('aHR0cHM6Ly9hcGkubWNzcnZzdGF0LnVzLzIv') + `${serverIP}:${s>
+        const response = await fetch(atob('aHR0cHM6Ly9hcGkubWNzcnZzdGF0LnVzLzIv') + `${serverIP}:${serverPort}`);
         const data = await response.json();
 
         if (!response.ok) {
