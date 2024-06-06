@@ -9,7 +9,7 @@ Cree este script educacionalmente
 pkg update && upgrade
 pkg install nodejs
 git clone https://github.com/AlanYTT/PluginChecker.git
-cd Plugins
+cd PluginChecker
 npm install
 ```
 ## Como usar
